@@ -1,1 +1,69 @@
-.tarjeta { padding: 1rem; }
+.tarjeta {
+  position: relative;
+  height: 100%;
+  padding: 1.25rem;
+  background: var(--superficie);
+  color: var(--texto);
+  border: 2px solid var(--borde);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.titulo {
+  font-size: 1.25rem;
+  margin-right: 4rem;
+}
+
+.categoria {
+  color: var(--primario);
+  font-weight: 600;
+}
+
+.disponible .relleno { background: var(--exito); }
+
+.pocos { border-color: var(--alerta); }
+.pocos .relleno { background: var(--alerta); }
+
+.completo { opacity: 0.6; }
+.completo .relleno { background: var(--peligro); }
+.textoCompleto {
+  color: var(--peligro);
+  font-weight: 700;
+}
+
+.etiqueta {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.15rem 0.6rem;
+  background: var(--primario);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+.barra {
+  height: 8px;
+  margin: 0.75rem 0;
+  background: var(--borde);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.relleno { height: 100%; }
+
+.btnDetalles {
+  padding: 0.4rem 0.9rem;
+  background: transparent;
+  color: var(--primario);
+  border: 2px solid var(--primario);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.descripcion { margin: 0.75rem 0 0; }
+
+.expandida {
+  border-color: var(--primario);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
