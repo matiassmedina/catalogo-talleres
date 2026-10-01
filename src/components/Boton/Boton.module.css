@@ -1,0 +1,16 @@
+.boton {
+  font: inherit;
+  padding: 0.45rem 1rem;
+  border: 2px solid var(--primario);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: filter 0.15s;
+}
+.boton:hover { filter: brightness(1.1); }
+.boton:focus-visible { outline: 3px solid var(--alerta); outline-offset: 2px; }
+
+.primario { background: var(--primario); color: #fff; }
+.secundario { background: transparent; color: var(--primario); }
+
+.activo { box-shadow: 0 0 0 3px var(--texto); font-weight: 700; }
+.secundario.activo { background: var(--primario); color: #fff; }

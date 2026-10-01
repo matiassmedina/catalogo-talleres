@@ -52,15 +52,16 @@
 }
 .relleno { height: 100%; }
 
-.btnDetalles {
-  padding: 0.4rem 0.9rem;
-  background: transparent;
-  color: var(--primario);
-  border: 2px solid var(--primario);
-  border-radius: 8px;
-  cursor: pointer;
+.horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
 }
 
+.horizontal > * { margin: 0; }
+.horizontal .barra { flex: 1 1 160px; }
+.horizontal .descripcion { flex-basis: 100%; }
 .descripcion { margin: 0.75rem 0 0; }
 
 .expandida {
